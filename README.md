@@ -1,4 +1,4 @@
-# BigHugetThesaurusClient
+# BigHugeThesaurusClient
 
 [![Latest Version on Packagist][ico-version]][link-packagist]
 [![Software License][ico-license]](LICENSE.md)
@@ -34,27 +34,27 @@ $response->getSynonyms($type = null): array
 /**
  * Get the antonyms from the response
  */
-public function getAntonyms($type = null): array
+$response->getAntonyms($type = null): array
 
 /**
  * Get the similar terms from the response
  */
-public function getSimilarTerms($type = null): array
+$response->getSimilarTerms($type = null): array
 
 /**
  * Get related terms from the response
  */
-public function getRelatedTerms($type = null): array
+$response->getRelatedTerms($type = null): array
 
 /**
  * Cast response to array (returns the original response)
  */ 
-public function toArray(): array
+$response->toArray(): array
 
 /**
  * Cast response to JSON
  */
-public function toJson()
+$response->toJson()
 ```
 
 The client throws specific exceptions when an error occurs. Those errors are documented on the [Big Huge Thesaurus Api Page](https://words.bighugelabs.com/api.php).
@@ -98,3 +98,10 @@ If you discover any security related issues, please email maurizio@mettle.io ins
 ## License
 
 The MIT License (MIT). Please see [License File](LICENSE.md) for more information.
+
+[ico-version]: https://img.shields.io/packagist/v/mettleworks/big-huge-thesaurus-client.svg?style=flat-square
+[ico-license]: https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square
+[ico-downloads]: https://img.shields.io/packagist/dt/mettleworks/big-huge-thesaurus-client.svg?style=flat-square
+
+[link-packagist]: https://packagist.org/packages/mettleworks/big-huge-thesaurus-client
+[link-downloads]: https://packagist.org/packages/mettleworks/big-huge-thesaurus-client
