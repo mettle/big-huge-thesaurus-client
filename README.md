@@ -19,7 +19,7 @@ $ composer require mettleworks/big-huge-thesaurus-client
 ``` php
 $API_KEY = 'Get an api key @ https://words.bighugelabs.com/api.php';
 
-$client = new Mettleworks\BigHugeThesaurusClient($API_KEY);
+$client = new Mettleworks\BigHugeThesaurusClient\BigHugeThesaurusClient($API_KEY);
 $response = $client->lookup('love');
 ```
 
