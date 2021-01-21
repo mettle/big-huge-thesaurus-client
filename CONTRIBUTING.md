@@ -2,7 +2,7 @@
 
 Contributions are **welcome** and will be fully **credited**.
 
-We accept contributions via Pull Requests on [Github](https://github.com/mettleworks/big-huge-thesaurus-client).
+We accept contributions via Pull Requests on [Github](https://github.com/mettle/big-huge-thesaurus-client).
 
 
 ## Pull Requests

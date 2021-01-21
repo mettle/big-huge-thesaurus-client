@@ -11,7 +11,7 @@ PHP Wrapper for the [Big Huge Labs Thesaurus API](http://words.bighugelabs.com/)
 Via Composer
 
 ``` bash
-$ composer require mettleworks/big-huge-thesaurus-client
+$ composer require mettle/big-huge-thesaurus-client
 ```
 
 ## Usage
@@ -99,9 +99,9 @@ If you discover any security related issues, please email maurizio@mettle.io ins
 
 The MIT License (MIT). Please see [License File](LICENSE.md) for more information.
 
-[ico-version]: https://img.shields.io/packagist/v/mettleworks/big-huge-thesaurus-client.svg?style=flat-square
+[ico-version]: https://img.shields.io/packagist/v/mettle/big-huge-thesaurus-client.svg?style=flat-square
 [ico-license]: https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square
-[ico-downloads]: https://img.shields.io/packagist/dt/mettleworks/big-huge-thesaurus-client.svg?style=flat-square
+[ico-downloads]: https://img.shields.io/packagist/dt/mettle/big-huge-thesaurus-client.svg?style=flat-square
 
-[link-packagist]: https://packagist.org/packages/mettleworks/big-huge-thesaurus-client
-[link-downloads]: https://packagist.org/packages/mettleworks/big-huge-thesaurus-client
+[link-packagist]: https://packagist.org/packages/mettle/big-huge-thesaurus-client
+[link-downloads]: https://packagist.org/packages/mettle/big-huge-thesaurus-client
