@@ -22,7 +22,7 @@ class BigHugeThesaurusClientTest extends TestCase
     protected $mockHandler;
     protected $httpClient;
 
-    protected function setUp()
+    protected function setUp(): void
     {
         $this->mockHandler = new MockHandler();
 
