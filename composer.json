@@ -1,13 +1,13 @@
 {
-    "name": "mettleworks/big-huge-thesaurus-client",
+    "name": "mettle/big-huge-thesaurus-client",
     "type": "library",
     "description": "PHP Client around Big Huge Thesaurus API",
     "keywords": [
-        "mettleworks",
+        "mettle",
         "big-huge-thesaurus-client",
         "big huge thesaurus"
     ],
-    "homepage": "https://github.com/mettleworks/big-huge-thesaurus-client",
+    "homepage": "https://github.com/mettle/big-huge-thesaurus-client",
     "license": "MIT",
     "authors": [
         {
