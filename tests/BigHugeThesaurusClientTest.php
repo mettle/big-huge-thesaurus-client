@@ -137,13 +137,16 @@ class BigHugeThesaurusClientTest extends TestCase
     /** @test */
     public function itShouldReturnTheRawResponseFromTheClient()
     {
-        $this->mockHandler->append(new Response(200, [], file_get_contents(__DIR__ . '/fixtures/love.json')));
+        $response = file_get_contents(__DIR__ . '/fixtures/love.json');
+
+        $this->mockHandler->append(new Response(200, [], $response));
 
         $apiClient = $this->createClient('123');
 
         $apiClient->lookup('love');
 
         $this->assertIsString($apiClient->getRawResponse());
+        $this->assertEquals($response, $apiClient->getRawResponse());
     }
 
     /** @test */

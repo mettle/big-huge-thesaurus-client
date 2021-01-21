@@ -233,7 +233,7 @@ class ThesaurusResponse
      *
      * @return string
      */
-    public function toJson()
+    public function toJson(): string
     {
         return json_encode($this->response);
     }

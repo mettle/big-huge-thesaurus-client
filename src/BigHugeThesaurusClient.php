@@ -73,10 +73,10 @@ class BigHugeThesaurusClient
     /**
      * Sets the client to be used for querying the API endpoints
      *
-     * @param Client $client
+     * @param Client|null $client
      * @return $this
      */
-    public function setHttpClient(Client $client = null)
+    public function setHttpClient(Client $client = null): BigHugeThesaurusClient
     {
         if ($client === null) {
             $client = new Client([
@@ -113,11 +113,10 @@ class BigHugeThesaurusClient
      * @param string $word
      * @return ThesaurusResponse
      * @throws NotFoundException
-     * @throws RemoteException
      * @throws GuzzleException
      * @see    https://words.bighugelabs.com/api.php
      */
-    public function lookup(string $word)
+    public function lookup(string $word): ThesaurusResponse
     {
         try {
             if (!$this->getHttpClient()) {
@@ -149,7 +148,6 @@ class BigHugeThesaurusClient
      *
      * @param  string $word
      * @throws NotFoundException
-     * @throws RemoteException
      * @throws GuzzleException
      * @return array
      */
@@ -165,7 +163,6 @@ class BigHugeThesaurusClient
      *
      * @param  string $word
      * @throws NotFoundException
-     * @throws RemoteException
      * @throws GuzzleException
      * @return array
      */
@@ -181,7 +178,6 @@ class BigHugeThesaurusClient
      *
      * @param  string $word
      * @throws NotFoundException
-     * @throws RemoteException
      * @throws GuzzleException
      * @return array
      */
@@ -197,7 +193,6 @@ class BigHugeThesaurusClient
      *
      * @param  string $word
      * @throws NotFoundException
-     * @throws RemoteException
      * @throws GuzzleException
      * @return array
      */
@@ -211,9 +206,9 @@ class BigHugeThesaurusClient
     /**
      * Get the raw response
      *
-     * @return ThesaurusResponse
+     * @return string
      */
-    public function getRawResponse()
+    public function getRawResponse(): string
     {
         return $this->rawResponse;
     }
@@ -221,10 +216,10 @@ class BigHugeThesaurusClient
     /**
      * Parse the response into a ThesaurusResponse
      *
-     * @param  string $response
+     * @param string $response
      * @return ThesaurusResponse
      */
-    protected function parseResponse($response)
+    protected function parseResponse(string $response): ThesaurusResponse
     {
         $parsed = json_decode($response, true);
 
