@@ -18,7 +18,7 @@
         }
     ],
     "require": {
-        "php" : "^7.3|^8.1",
+        "php" : "^7.3|^8.0",
         "ext-json": "*",
         "guzzlehttp/guzzle": "^7.0.1"
     },
@@ -41,11 +41,8 @@
         "check-style": "phpcs src tests",
         "fix-style": "phpcbf src tests"
     },
-    "extra": {
-        "branch-alias": {
-            "dev-master": "1.1-dev"
-        }
-    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
     "config": {
         "sort-packages": true
     }
