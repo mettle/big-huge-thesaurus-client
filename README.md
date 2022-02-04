@@ -94,6 +94,7 @@ If you discover any security related issues, please email maurizio@mettle.io ins
 ## Credits
 
 - [Maurizio Bonani](https://github.com/mauricius)
+- [Grant Janecek](https://github.com/grantjanecek)
 
 ## License
 
